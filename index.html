@@ -16,10 +16,29 @@
 </head>
 
 <body>
-  <navbar class="navbar" id="navbar">
-    <div class="container"></div>
-  </navbar>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__nav">
+        <div class="navbar__logo">
+          <a href="#"><img src="./dist/img/illustrex_logo.svg" alt="Logo NewsHub" class="logo"></a>
+        </div>
 
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#logIn" class="login_btn" style="font-weight: 300;">Strona główna</a></li>
+          <li class="navbar__item"><a href="#offers" class="register_btn">Oferta</a></li>
+          <li class="navbar__item"><a href="#portfolio" class="register_btn">Portfolio</a></li>
+          <li class="navbar__item"><a href="#faq" class="register_btn">FAQ</a></li>
+          <li class="navbar__item"><a href="#cooperation" class="register_btn">Współpraca</a></li>
+        </ul>
+
+        <button class="burger" aria-label="Otwórz menu nawigacyjne" role="button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
   <header class="header" id="header">
     <div class="container">
       <div class="header__box">
@@ -42,88 +61,109 @@
       <div class="container">
         <div class="section__box">
           <h2 class="section__box-heading">Nasze usługi</h2>
-          <p class="section__box-text">Zaufaj profesjonalnym rozwiązaniom, które przekształcą
+          <p class="section__box-text">Zaufaj profesjonalnym rozwiązaniom, które przekształcą <br>
             Twoje pomysły w sukces.</p>
         </div>
-        <div class="swiper-container">
-          <div class="swiper-buittons">
-            <div class="swiper-button-prev swiper-button">
-              <img src="./dist/img/icons/arrow-left.svg" alt="">
-            </div>
-            <div class="swiper-button-next swiper-button">
-              <img src="./dist/img/icons/arrow-right.svg" alt="">
-
-            </div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-buittons">
+          <div class="swiper-button-prev swiper-button">
+            <img src="./dist/img/icons/arrow-left.svg" alt="">
           </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide service__box">
-                <div class="service__box-image">
-                  <img src="./dist/img/icons/icon_bag2.svg" alt="" class="">
-                </div>
-                <h3 class="service__box-heading">Wizualizacja marki</h3>
-                <p class="service__box-text">Wizualizacja marki to graficzne przedstawienie jej tożsamości i wartości
-                  poprzez elementy takie jak logo, kolorystyka i styl, które tworzą spójny i rozpoznawalny wizerunek.
-                </p>
-                <a href="#" class="service__box-button">Bezpłatna wycena</a>
-              </div>
-              <div class="swiper-slide service__box">
-                <div class="service__box-image">
-                  <img src="./dist/img/icons/service__icon.svg" alt="" class="">
-                </div>
-                <h3 class="service__box-heading">Logo</h3>
-                <p class="service__box-text">Logo to graficzny symbol lub znak, który reprezentuje markę, firmę lub
-                  organizację, służący do jej identyfikacji i wyróżnienia na rynku.
-                </p>
-                <a href="#" class="service__box-button">Bezpłatna wycena</a>
-              </div>
-              <div class="swiper-slide service__box">
-                <div class="service__box-image">
-                  <img src="./dist/img/icons/service__icon.svg" alt="" class="">
-                </div>
-                <h3 class="service__box-heading">Projekt wizytówki</h3>
-                <p class="service__box-text">Projekt wizytówki to estetyczny układ zawierający kluczowe informacje
-                  kontaktowe i logo, zaprojektowany tak, aby profesjonalnie reprezentować markę.
-                </p>
-                <a href="#" class="service__box-button">Bezpłatna wycena</a>
-              </div>
-              <div class="swiper-slide service__box">
-                <div class="service__box-image">
-                  <img src="./dist/img/icons/service__icon.svg" alt="" class="">
-                </div>
-                <h3 class="service__box-heading">Billboardy</h3>
-                <p class="service__box-text">To duże formaty reklamowe w przestrzeni publicznej, które mają przyciągnąć
-                  uwagę wielu osób, zwiększając rozpoznawalność marki, promując produkty lub budując wizerunek.
-                </p>
-                <a href="#" class="service__box-button">Bezpłatna wycena</a>
-              </div>
-              <div class="swiper-slide service__box">
-                <div class="service__box-image">
-                  <img src="./dist/img/icons/service__icon.svg" alt="" class="">
-                </div>
-                <h3 class="service__box-heading">Plakaty</h3>
-                <p class="service__box-text">Plakaty to duże, drukowane materiały graficzne lub tekstowe, mające
-                  przyciągnąć uwagę i przekazać wiadomość, często w miejscach publicznych. Cechują je intensywne kolory
-                  i duże napisy, aby skutecznie zwrócić uwagę
-                </p>
-                <a href="#" class="service__box-button">Bezpłatna wycena</a>
-              </div>
+          <div class="swiper-button-next swiper-button">
+            <img src="./dist/img/icons/arrow-right.svg" alt="">
 
-
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide service__box">
+              <div class="service__box-image">
+                <img src="./dist/img/icons/icon_bag2.svg" alt="" class="">
+              </div>
+              <h3 class="service__box-heading">Wizualizacja marki</h3>
+              <p class="service__box-text">Wizualizacja marki to graficzne przedstawienie jej tożsamości i wartości poprzez elementy takie jak logo, kolorystyka i styl, które tworzą spójny i rozpoznawalny wizerunek.
+              </p>
+              <a href="#" class="service__box-button">Bezpłatna wycena</a>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
+            <div class="swiper-slide service__box">
+              <div class="service__box-image">
+                <img src="./dist/img/icons/service__icon.svg" alt="" class="">
+              </div>
+              <h3 class="service__box-heading">Logo</h3>
+              <p class="service__box-text">Logo to graficzny symbol lub znak, który reprezentuje markę, firmę lub
+                organizację, służący do jej identyfikacji i wyróżnienia na rynku.
+              </p>
+              <a href="#" class="service__box-button">Bezpłatna wycena</a>
+            </div>
+            <div class="swiper-slide service__box">
+              <div class="service__box-image">
+                <img src="./dist/img/icons/service__icon.svg" alt="" class="">
+              </div>
+              <h3 class="service__box-heading">Projekt wizytówki</h3>
+              <p class="service__box-text">Projekt wizytówki to estetyczny układ zawierający kluczowe informacje
+                kontaktowe i logo, zaprojektowany tak, aby profesjonalnie reprezentować markę.
+              </p>
+              <a href="#" class="service__box-button">Bezpłatna wycena</a>
+            </div>
+            <div class="swiper-slide service__box">
+              <div class="service__box-image">
+                <img src="./dist/img/icons/service__icon.svg" alt="" class="">
+              </div>
+              <h3 class="service__box-heading">Billboardy</h3>
+              <p class="service__box-text">To duże formaty reklamowe w przestrzeni publicznej, które mają przyciągnąć
+                uwagę wielu osób, zwiększając rozpoznawalność marki, promując produkty lub budując wizerunek.
+              </p>
+              <a href="#" class="service__box-button">Bezpłatna wycena</a>
+            </div>
+            <div class="swiper-slide service__box">
+              <div class="service__box-image">
+                <img src="./dist/img/icons/service__icon.svg" alt="" class="">
+              </div>
+              <h3 class="service__box-heading">Plakaty</h3>
+              <p class="service__box-text">Plakaty to duże, drukowane materiały graficzne lub tekstowe, mające
+                przyciągnąć uwagę i przekazać wiadomość, często w miejscach publicznych. Cechują je intensywne kolory
+                i duże napisy, aby skutecznie zwrócić uwagę
+              </p>
+              <a href="#" class="service__box-button">Bezpłatna wycena</a>
+            </div>
 
 
           </div>
+          <!-- If we need pagination -->
+          
+          <div class="swiper-pagination"></div>
+          
+          
         </div>
 
       </div>
     </section>
-    <section class="about-me" id="about-me">
-      <div class="container"></div>
+    <section class="about section-padding" id="about">
+      <div class="container">
+
+        <div class="about__row">
+
+          <div class="about__box">
+            <h2 class="about__box-heading">Więcej o mnie</h2>
+            <p class="about__box-text"><span class="about__box-text--span">Jakub Korporowicz</span> - Grafik komputerowy
+              i
+              montażysta postprodukcji</p>
+            <p class="about__box-subtext">Od 13. roku życia, kiedy zaczynałem tworzyć filmy na YouTube, rozwijam pasję
+              do
+              grafiki i montażu. Obecnie zajmuję się profesjonalnym projektowaniem graficznym i montażem w
+              postprodukcji. Współpracuję z .....</p>
+
+            <button class="about__box-subtext-expand" id="about__box-subtext-expand">Rozwiń</button>
+          </div>
+
+
+          <div class="about__row-img">
+            <img src="./dist/img/about_man.svg" alt="">
+          </div>
+        </div>
+      </div>
     </section>
     <section class="why-us" id="why-us">
       <div class="container"></div>
