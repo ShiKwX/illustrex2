@@ -24,10 +24,10 @@
         </div>
 
         <ul class="navbar__list">
-          <li class="navbar__item"><a href="#offers" class="register_btn">Oferta</a></li>
-          <li class="navbar__item"><a href="#portfolio" class="register_btn">Portfolio</a></li>
-          <li class="navbar__item"><a href="#faq" class="register_btn">FAQ</a></li>
-          <li class="navbar__item"><a href="#cooperation" class="register_btn">Współpraca</a></li>
+          <li class="navbar__item"><a href="#offers" class="navbar__link">Oferta</a></li>
+          <li class="navbar__item"><a href="#portfolio" class="navbar__link">Portfolio</a></li>
+          <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li class="navbar__item"><a href="#cooperation" class="navbar__link">Współpraca</a></li>
         </ul>
 
         <button class="burger" aria-label="Otwórz menu nawigacyjne" role="button">
@@ -153,8 +153,10 @@
             <p class="about__box-subtext">Od 13. roku życia, kiedy zaczynałem tworzyć filmy na YouTube, rozwijam pasję
               do grafiki i montażu. Obecnie zajmuję się profesjonalnym projektowaniem graficznym i montażem w
               postprodukcji. </p>
-
-            <button class="about__box-subtext-expand" id="about__box-subtext-expand">Rozwiń</button>
+            <div class="about__buttons">
+              <a class="about__buttons-button about__buttons-button--first">Napisz do mnie</a>
+              <a class="about__buttons-button about__buttons-button--second">Portfolio</a>
+            </div>
           </div>
 
 
@@ -250,7 +252,6 @@
           </div>
 
 
-
         </div>
         <a href="#" class="why-us__button">Napisz do nas! <img src="./dist/img/icons/paper-plane.svg" alt=""></a>
       </div>
@@ -264,11 +265,17 @@
 
         <div class="filter-bar">
           <button class="filter-btn active" data-category="all">Wszystkie</button>
-          <button class="filter-btn" data-category="reklama">Reklama</button>
-          <button class="filter-btn" data-category="social">Social</button>
-          <button class="filter-btn" data-category="web-design">Web Design</button>
           <button class="filter-btn" data-category="logo">Logo</button>
+          <button class="filter-btn" data-category="social">Social</button>
           <button class="filter-btn" data-category="druk">Druk</button>
+
+          <div class="dropdown">
+            <button class="dropdown-button filter-btn">Inne <img src="./dist/img/icons/chevron.svg" alt=""></button>
+            <div class="dropdown-content">
+              <button class="filter-btn" data-category="reklama">Reklama</button>
+              <button class="filter-btn" data-category="web-design">Web Design</button>
+            </div>
+          </div>
         </div>
         <div class="filter-dropdown">
           <select id="filter-select">
@@ -315,7 +322,8 @@
       </div>
     </section>
     <section class="newsletter" id="newsletter">
-      <div class="container"></div>
+      <div class="container">
+      </div>
     </section>
   </main>
   <footer class="footer" id="footer">
@@ -334,26 +342,25 @@
         <div class="footer__columns">
           <div class="footer__column">
             <p class="footer__column-heading">Oferta</p>
-            <p class="footer__column-text">Projekt graficzny</p>
-            <p class="footer__column-text">Projekt graficzny</p>
-            <p class="footer__column-text">Projekt graficzny</p>
-            <p class="footer__column-text">Projekt graficzny</p>
+            <a href="#" class="footer__column-text">Projekt graficzny</a>
+            <a href="#" class="footer__column-text">Montaż filmowy</a>
           </div>
           <div class="footer__column">
             <p class="footer__column-heading">Współpraca</p>
-            <p class="footer__column-text">Projekt graficzny</p>
+            <a href="#" class="footer__column-text">Wyślij propozycje</a>
+            <a href="#" class="footer__column-text">Wyślij zapytanie</a>
           </div>
           <div class="footer__column">
             <p class="footer__column-heading">Kontakt</p>
-            <p class="footer__column-text">Facebook</p>
-            <p class="footer__column-text">Instagram</p>
-            <p class="footer__column-text">Gmail</p>
+            <a href="#" class="footer__column-text">Facebook</a>
+            <a href="#" class="footer__column-text">Instagram</a>
+            <a href="#" class="footer__column-text">Gmail</a>
           </div>
         </div>
       </div>
       <div class="footer__policy">
-        <p class="footer__policy-policy">Polityka Prywatności</p>
-        <p class="footer__policy-copyright">Copyright © 2024 Ilustrex | Wszelkie prawa zastrzeżone.</p>
+        <a href="#" class="footer__policy-policy">Polityka Prywatności</a>
+        <p class="footer__policy-copyright">Copyright © <span class="footer-number"></span> <span style="font-weight: 600;"> Ilustrex</span> </p>
       </div>
     </div>
   </footer>
