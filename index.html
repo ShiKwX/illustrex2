@@ -24,6 +24,7 @@
         </div>
 
         <ul class="navbar__list">
+          <li class="navbar__item"><a href="#" class="navbar__link" style="font-weight: 400;">Strona główna</a></li>
           <li class="navbar__item"><a href="#offers" class="navbar__link">Oferta</a></li>
           <li class="navbar__item"><a href="#portfolio" class="navbar__link">Portfolio</a></li>
           <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
@@ -270,7 +271,7 @@
           <button class="filter-btn" data-category="druk">Druk</button>
 
           <div class="dropdown">
-            <button class="dropdown-button filter-btn">Inne <img src="./dist/img/icons/chevron.svg" alt=""></button>
+            <button class="dropdown-button">Inne <img src="./dist/img/icons/chevron.svg" alt=""></button>
             <div class="dropdown-content">
               <button class="filter-btn" data-category="reklama">Reklama</button>
               <button class="filter-btn" data-category="web-design">Web Design</button>
@@ -289,40 +290,24 @@
         </div>
         <div class="portfolio__items" id="portfolio__items">
 
-          <!-- <div class="portfolio__items-item show" data-category="social">
-            <img src="./dist/img/KENNYFILMS-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="web-design">
-            <img src="./dist/img/12-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="social">
-            <img src="./dist/img/multi-house-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="reklama">
-            <img src="./dist/img/podomefix-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="social">
-            <img src="./dist/img/FilmCOMBATJPG-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="reklama">
-            <img src="./dist/img/ZAKRECONY-PODKAST-min.gif" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="social">
-            <img src="./dist/img/Logo-garden-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="reklama">
-            <img src="./dist/img/magnetyczna-pamiatka-min.png" alt="Social" loading="lazy">
-          </div>
-          <div class="portfolio__items-item show" data-category="web">
-            <img src="./dist/img/world-around-technology-min.png" alt="Social" loading="lazy">
-          </div> -->
+     
 
         </div>
         <button class="load_more-button">Zobacz więcej</button>
       </div>
     </section>
-    <section class="newsletter" id="newsletter">
+    <section class="newsletter section-padding" id="newsletter">
       <div class="container">
+        <div class="newsletter__box">
+          <h2 class="newsletter__box-heading">Napisz o bezpłatną wycenę</h2>
+          <p class="newsletter__box-text">Podając adres mail wysyłasz automatyczną wiadomość do supportu. <br>
+            W przeciągu kilku godzin dostaniesz wiadomość zwrotną</p>
+        </div>
+
+        <div class="newsletter__form">
+          <input type="text" class="newsletter__form-input" placeholder="twójadresmail@mail.com">
+          <button type="submit" class="newsletter__form-submit">Wyślij <img src="./dist/img/icons/chevron-right.svg" alt=""></button>
+        </div>
       </div>
     </section>
   </main>
