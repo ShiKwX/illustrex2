@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilustrex - kontakt</title>
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar no-shadow navbar-shadow">
+    <div class="container">
+      <div class="navbar__nav">
+        <div class="navbar__logo">
+          <a href="#"><img src="./dist/img/illustrex_logo.svg" alt="Logo NewsHub" class="logo"></a>
+        </div>
+
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="./index.html#" class="navbar__link">Strona
+              główna</a></li>
+          <li class="navbar__item"><a href="#offers" class="navbar__link">Oferta</a></li>
+          <li class="navbar__item"><a href="./index.html#portfolio" class="navbar__link">Portfolio</a></li>
+          <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link" style="font-weight: 400;">Kontakt</a></li>
+        </ul>
+
+        <button class="burger" aria-label="Otwórz menu nawigacyjne" role="button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main" id="main">
+    <section class="contact section-padding">
+      <div class="container">
+        <div class="section__box">
+          <h2 class="section__box-heading">Zapytaj o bezpłatną wycenę</h2>
+          <p class="section__box-text">Skontaktuj się z nami już dziś!</p>
+        </div>
+
+        <div class="form__container">
+          <form class="form contact__form" id="contactForm" action="/#" method="post">
+            <h3 class="form__heading">Formularz kontaktowy</h3>
+
+            <div class="form__row">
+              <div class="form__row-item">
+                <label class="form__label" for="name">Imię:</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Wpisz swoje imię">
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form__row-item">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="Wpisz swój email">
+                <span class="error-message" id="emailError"></span>
+              </div>
+            </div>
+
+            <label class="form__label" for="message">Wiadomość:</label>
+            <textarea class="form__textarea" id="message" name="message" rows="5"
+              placeholder="Wpisz swoją wiadomość"></textarea>
+            <span class="error-message" id="messageError"></span>
+            
+          </form>
+
+
+          <div class="form__submit">
+            <h3 class="form__submit-heading">Regulamin serwisu <img src="./dist/img/icons/shield.svg" alt="">
+            </h3>
+            <p class="form__submit-text">W celu kontynuowania procesu i przesłania numeru telefonu oraz adresu e-mail,
+              prosimy o zapoznanie się z naszą <a href="#" class="form__submit-policy">Polityką prywatności</a>.
+              Dokument ten szczegółowo opisuje, w jaki sposób przetwarzamy, przechowujemy i chronimy Państwa dane
+              osobowe.</p>
+
+            <div class="form__checkbox-container">
+              <input type="checkbox" id="contact_agreement" name="contact_agreement">
+              <label for="contact_agreement">Wyrażam zgodę na kontakt od Ilustrex.pl
+                Zawsze mogę wycofać tę zgodę.</label>
+            </div>
+
+            <div class="form__checkbox-container">
+              <input type="checkbox" id="newsletter_agreement" name="newsletter_agreement">
+              <label for="newsletter_agreement">Chcę otrzymywać newsletter.</label>
+            </div>
+            <button class="form__button" type="submit" form="contactForm">
+              Wyślij
+              <svg width="32" height="33" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.07847 3.89558C4.88652 3.86769 4.69081 3.88947 4.50917 3.95895C4.32753 4.02842 4.16573 4.14338 4.03852 4.29334C3.91131 4.4433 3.82274 4.62351 3.78085 4.81754C3.73897 5.01157 3.74512 5.21325 3.79874 5.40422L5.98947 13.2269C6.12873 13.724 6.42204 14.1612 6.82509 14.4723C7.22813 14.7834 7.71902 14.9517 8.22359 14.9516H17.6976C18.0058 14.9516 18.3014 15.0771 18.5193 15.3004C18.7372 15.5238 18.8596 15.8267 18.8596 16.1426C18.8596 16.4585 18.7372 16.7614 18.5193 16.9848C18.3014 17.2082 18.0058 17.3336 17.6976 17.3336H8.22359C7.71902 17.3335 7.22813 17.5018 6.82509 17.8129C6.42204 18.124 6.12873 18.5612 5.98947 19.0583L3.79874 26.881C3.74512 27.072 3.73897 27.2736 3.78085 27.4677C3.82274 27.6617 3.91131 27.8419 4.03852 27.9919C4.16573 28.1418 4.32753 28.2568 4.50917 28.3263C4.69081 28.3957 4.88652 28.4175 5.07847 28.3896C13.9038 27.1043 22.1539 23.1479 28.7722 17.0271C28.893 16.9155 28.9896 16.779 29.0557 16.6267C29.1218 16.4743 29.156 16.3094 29.156 16.1426C29.156 15.9758 29.1218 15.8109 29.0557 15.6586C28.9896 15.5062 28.893 15.3697 28.7722 15.2581C22.1539 9.1373 13.9038 5.1809 5.07847 3.89558Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__box">
+
+        <div class="footer__logo">
+          <a href="./index.html#">
+            <img src="./dist/img/footer_logo.svg" alt="" class="footer__logo-img">
+          </a>
+          <p class="footer__logo-text">Ilustrex - Projektowanie Graficzne <br>
+            Założycielem “Ilustrex” jest Jakub Korporowicz
+          </p>
+        </div>
+
+        <div class="footer__columns">
+          <div class="footer__column">
+            <p class="footer__column-heading">Oferta</p>
+            <a href="#" class="footer__column-text">Projekt graficzny</a>
+            <a href="#" class="footer__column-text">Montaż filmowy</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-heading">Współpraca</p>
+            <a href="#" class="footer__column-text">Wyślij propozycje</a>
+            <a href="#" class="footer__column-text">Wyślij zapytanie</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-heading">Kontakt</p>
+            <a href="#" class="footer__column-text">Facebook</a>
+            <a href="#" class="footer__column-text">Instagram</a>
+            <a href="#" class="footer__column-text">Gmail</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__policy">
+        <a href="#" class="footer__policy-policy">Polityka Prywatności</a>
+        <p class="footer__policy-copyright">Copyright © <span class="footer-number"></span> <span
+            style="font-weight: 600;"> Ilustrex</span> </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./dist/js/main.min.js"></script>
+
+</body>
+
+</html>
